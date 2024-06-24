@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body{
+    margin: 0;
+    padding: 0;
+    backdrop-filter: blur(40px);
+    background: url("https://images.pexels.com/photos/14826482/pexels-photo-14826482.jpeg?cs=srgb&dl=pexels-kaandurmus-14826482.jpg&fm=jpg");
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'DM Sans', sans-serif;
+    }
+    .center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+    }
+    .center h1{
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid silver;
+    }
+    .center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+    }
+    form .txt_field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+    }
+    .txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    }
+    .txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+    }
+    .txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #000000;
+    transition:.5s;
+    }
+    .txt_field input:focus ~ label,
+    .txt_field input:valid ~ label{
+    top: -5px;
+    color: #000000;
+    }
+    .txt_field input:focus ~ span::before,
+    .txt_field input:valid ~ span::before{
+    width: 100%;
+    }
+    .pass{
+    margin: -5px 0 20px 5px;
+    color: #a6a6a6;
+    cursor: pointer;
+    }
+    .pass:hover{
+    text-decoration: underline;
+    }
+    input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    backdrop-filter: blur(40px);
+    background: url("https://images.pexels.com/photos/14826482/pexels-photo-14826482.jpeg?cs=srgb&dl=pexels-kaandurmus-14826482.jpg&fm=jpg");
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    }
+    input[type="submit"]:hover{
+    border-color: #3a3a3a;
+    transition:.5s;
+    font-family: 'DM Sans', sans-serif;
+    }
+    input[type="submit"]{
+        
+        font-family: 'DM Sans', sans-serif;
+        }
+    .signup_link{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #a6a6a6;
+    }
+    .signup_link a{
+    color: #a6a6a6;
+    text-decoration: none;
+    }
+    .signup_link a:hover{
+    text-decoration: underline;
+    }
+
+    input[type="text"]
+    {
+        font-size:24px;
+    }
+                        /* Navbar container */
+.navbar {
+overflow: hidden;
+background-color:linear-gradient(120deg,#0D6EFD,#609cfc);
+}
+
+/* Links inside the navbar */
+.navbar a {
+float: left;
+font-size: 16px;
+color: rgb(255, 255, 255);
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+float: left;
+overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+font-size: 16px;
+border: none;
+outline: none;
+color: rgb(255, 255, 255);
+padding: 14px 16px;
+background-color: inherit;
+font-family: inherit; /* Important for vertical align on mobile phones */
+margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+background-color: #000000;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+float: none;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+background-color: #ffffff;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+input[type="text"]
+{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+}
+
+
+
+/* hello */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.header-content .logo-text a, 
+.intro button a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
