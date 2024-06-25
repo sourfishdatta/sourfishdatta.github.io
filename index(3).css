@@ -47,19 +47,6 @@ nav a {
     font-size: 16px;
 }
 
-.slideshow {
-    display: flex;
-    overflow: hidden;
-    margin: 20px 0;
-}
-
-.slideshow img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-
 .intro button {
     background-color: #000;
     color: #fff;
@@ -86,6 +73,7 @@ footer {
     margin: 0 10px;
     font-size: 18px;
     text-decoration: none;
+    opacity: 40%;
 }
 
 .header-content .logo-text a, 
@@ -98,7 +86,7 @@ footer {
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 0.9em;
-    min-width: 400px;
+    min-width: 300px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
@@ -172,14 +160,20 @@ footer {
     border-radius: 5px;
 }
 
-.socials a {
-    color: #fff;
-    margin: 0 10px;
-    font-size: 18px;
-    text-decoration: none;
-    opacity: 40%;
+.table-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Adjust gap as needed */
+    width: 100%;
 }
 
-.content-table, .header-content, button {
-    margin-left: 20px;
+.table-container {
+    flex: 1; /* Allows tables to grow and shrink */
+    max-width: 8%;
+    min-width: 300px; /* Ensures that tables do not shrink too much */
+}
+
+.rizzy-gyaat-ohio { 
+    font-size: 25px
 }
