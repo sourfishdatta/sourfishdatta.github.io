@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Crossword Society</title>
+    <link rel="stylesheet" href="index(5).css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/e/e2/Acs_favicon.png">
+    <script src="https://kit.fontawesome.com/e07ccf7e6a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-image">
+                <a href="index.html"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Asc_large.png" alt="ACS Logo" style="width:50px;height:50px;"></a>
+            </div>
+            <div class="logo-text">
+                <a href="index.html">American Crossword Society</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Daily</a></li>
+                <li><a href="#">Forums</a></li>
+                <li><a href="index(1).html">Tournaments</a></li>
+                <li><a href="#">ACS Live</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="index(2).html">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <center><p class="rizzy-gyaat-ohio"><b>American Crossword Society Nationals 2024</b> Results<p></center>
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'General')">General</button>
+                <button class="tablinks" onclick="openCity(event, 'Schedule')">Schedule</button>
+                <button class="tablinks" onclick="openCity(event, 'Sponsor')">Sponsor</button>
+                <button class="tablinks" onclick="openCity(event, 'Results')">Results</button>
+              </div>
+              
+              <!-- Tab content -->
+              <div id="General" class="tabcontent">
+                <h3>General</h3>
+                <p>Registration opens <b>tomorrow, Jun 27, 2024.</b>
+<br><br>
+                    <b>City:</b>
+                    New Rochelle, New York, United States
+                    <br>         
+                    <b>Venue:</b>
+                    Hotel NoMa
+                    <br>
+                    <b>Address:</b>
+                    1 Radisson Plaza, New Rochelle, NY 10801
+                    <br>
+                    <b>Details:</b>
+                    7th Floor Meeting Room
+                    <br>
+                    <b>Organization team</b>
+                    <br>
+                    <b>Organizer:</b>
+                    Sourish D</p>
+              </div>
+              
+              <div id="Schedule" class="tabcontent">
+                <h3>Schedule</h3>
+                <p>Schedule details for the event.</p>
+              </div>
+              
+              <div id="Sponsor" class="tabcontent">
+                <h3>Sponsor</h3>
+                <p>Information about the sponsors.</p>
+              </div>
+
+              <div id="Results" class="tabcontent">
+                <h3>Click <a href="index(3).html">here</a></h3>
+                <p></p>
+              </div>
+    </main>
+    
+    <footer>
+        <div class="socials">
+            <a href="https://www.instagram.com/cubingsimplified/" target="_blank">
+                <i class="fa-brands fa-instagram" alt="Instagram"></i>
+            </a>
+            <a href="https://discord.gg/SeEMV3dsN4" target="_blank">
+                <i class="fa-brands fa-discord" alt="Discord"></i>
+            </a>
+            <a href="https://github.com/CubingSimplified" target="_blank">
+                <i class="fa-brands fa-github" alt="GitHub"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+
+<script>
+    function openCity(evt, cityName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelector('.tablinks[onclick="openCity(event, \'General\')"]').click();
+    });
+</script>
+</html>

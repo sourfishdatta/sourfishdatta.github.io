@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/e/e2/Acs_favicon.png">
     <script src="https://kit.fontawesome.com/e07ccf7e6a.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -35,10 +34,9 @@
     </header>
 
     <main>
-        <center><h2>Tournaments</h2></center>
-      <center><input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search Tournaments"></center> 
+        <center><h2>Tournament Results</h2></center>
         <center>
-            <table class="content-table" id="myTable">
+            <table class="content-table">
                 <thead>
                     <tr>
                         <th style="width: 40%;">Tournament</th>
@@ -47,12 +45,12 @@
                         <th style="width: 10%;">Entry</th>
                     </tr>
                 </thead>
-                <tbody  id="myTable">
+                <tbody>
                     <tr>
-                        <td><a href="html(5).html">American Crossword Society Nationals 2024</a></td>
-                        <td><a href="html(5).html"><b>San Antonio, TX</b> UTSA Lecture Hall</a></td>
-                        <td><a href="html(5).html">7/12/2024, 8 AM - 9 AM</a></td>
-                        <td><a href="html(5).html">Free</a></td>
+                        <td><a href="index(3).html"> Crossword Society Nationals 2024</a></td>
+                        <td><b>San Antonio, TX</b> UTSA Lecture Hall</td>
+                        <td>7/12/2024, 8 AM - 9 AM</td>
+                        <td>Free</td>
                     </tr>
                     <tr>
                         <td>Solving in Stevenson</td>
@@ -140,28 +138,3 @@
     </footer>
 </body>
 </html>
-
-
-<script>
-    function myFunction() {
-      // Declare variables
-      var input, filter, table, tr, td, i, txtValue;
-      input = document.getElementById("myInput");
-      filter = input.value.toUpperCase();
-      table = document.getElementById("myTable");
-      tr = table.getElementsByTagName("tr");
-    
-      // Loop through all table rows, and hide those who don't match the search query
-      for (i = 0; i < tr.length; i++) {
-        td = tr[i].getElementsByTagName("td")[0];
-        if (td) {
-          txtValue = td.textContent || td.innerText;
-          if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            tr[i].style.display = "";
-          } else {
-            tr[i].style.display = "none";
-          }
-        }
-      }
-    }
-    </script>
