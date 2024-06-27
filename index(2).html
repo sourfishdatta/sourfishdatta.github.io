@@ -41,42 +41,33 @@
         <center><div class="center">
             <br>
             <h1>ACS Sign In</h1>
-            <div class="txt_field">
-              <input type="text" font=""required name="data[email]">
-              <span></span>
-              <label><i class="fa-solid fa-envelope"></i> Email</label>
-            </div>
-            <div class="txt_field">
-              <input type="password" required name="data[password]">
-              <span></span>
-              <label><i class="fa-solid fa-key"></i> Password</label>
-            </div>
-            <div class="pass">Forgot Password?</div>
-            <input type="submit" value="Login!" >
-            <div class="signup_link">
-              Not a member? <a href="index(6).html">Sign up.</a>
-            </div>
-          </form>
+          <form>
+        </body>
+        </html>
+        <div class="txt_field">
+        <input type="text" required font-family: 'Montserrat', sans-serif; name="data[email]">
+          <span></span>
+          <label><i class="fa-solid fa-envelope"></i>&nbsp;  Email</label>
+    
+        </div>
+        <div class="txt_field">
+            <input type="text" required name="data[name]">
+            <span></span>
+            <label><i class="fa-solid fa-user"></i>&nbsp; Full Name</label>
+          </div>
+    
+        <div class="txt_field">
+          <input type="password" required id="mtInput" name="data[password]">
+          <span></span>
+          <label><i class="fa-solid fa-key"></i> &nbsp; Password</label>
+        </div>
+    
+        <input type="submit" value="Sign In">
+        <div class="signup_link">
+          Not a member?<a href="index(6).html"> Sign Up!</a>
+        </div>
+      </form>
         </div>
         </div>
         </center>
-    <script>
-       var form = document.getElementById('sheetdb-form');
-    form.addEventListener("submit", e => {
-      e.preventDefault();
-      fetch(form.action, {
-          method : "POST",
-          body: new FormData(document.getElementById("sheetdb-form")),
-      }).then(
-          response => response.json()
-      ).then((html) => {
-        // you can put any JS code here
-        alert('Sign Up Successful')
-      });
-    });
-    </script>
-
-        
-      </body>
-    </html>
     
