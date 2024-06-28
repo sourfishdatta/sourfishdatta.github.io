@@ -10,10 +10,8 @@
         <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/e/e2/Acs_favicon.png">
         <script src="https://kit.fontawesome.com/e07ccf7e6a.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000&display=swap" rel="stylesheet">
-                
     </head>
     <body>
-
         <header>
             <div class="header-content">
                 <div class="logo-image">
@@ -27,64 +25,55 @@
             </div>
             <nav>
                 <ul>
-                    
                     <li><a href="#">Daily</a></li>
                     <li><a href="#">Forums</a></li>
                     <li><a href="index(1).html">Tournaments</a></li>
                     <li><a href="#">ACS Live</a></li>
                     <li><a href="#">Resources</a></li>
-                    <li><a href="index(2).html">Sign In</a></li>
+                    <li><a href="login.php">Sign In</a></li>
                 </ul>
             </nav>
         </header>
-    
-        <center><div class="center">
-            <br>
-            <h1>ACS Sign Up</h1>
-          <form action="https://sheetdb.io/api/v1/lfjnlz12hwr7d" method="POST" id="sheetdb-form">
-        </body>
-        </html>
-        <div class="txt_field">
-        <input type="text" required font-family: 'Montserrat', sans-serif; name="data[email]">
-          <span></span>
-          <label><i class="fa-solid fa-envelope"></i>&nbsp;  Email</label>
-    
-        </div>
-        <div class="txt_field">
-            <input type="text" required name="data[name]">
-            <span></span>
-            <label><i class="fa-solid fa-user"></i>&nbsp; Full Name</label>
-          </div>
-    
-        <div class="txt_field">
-          <input type="password" required id="mtInput" name="data[password]">
-          <span></span>
-          <label><i class="fa-solid fa-key"></i> &nbsp; Password</label>
-        </div>
-    
-        <input type="submit" value="Create account!">
-        <div class="signup_link">
-          Already a member? <a href="index(2).html">Login!</a>
-        </div>
-      </form>
-
-        </div>
-        </div>
+        <center>
+            <div class="center">
+                <br>
+                <h1>ACS Sign Up</h1>
+                <form action="https://sheetdb.io/api/v1/lfjnlz12hwr7d" method="POST" id="sheetdb-form">
+                    <div class="txt_field">
+                        <input type="text" required font-family: 'Montserrat', sans-serif; name="data[email]">
+                        <span></span>
+                        <label><i class="fa-solid fa-envelope"></i>&nbsp; Email</label>
+                    </div>
+                    <div class="txt_field">
+                        <input type="text" required name="data[name]">
+                        <span></span>
+                        <label><i class="fa-solid fa-user"></i>&nbsp; Full Name</label>
+                    </div>
+                    <div class="txt_field">
+                        <input type="password" required id="mtInput" name="data[password]">
+                        <span></span>
+                        <label><i class="fa-solid fa-key"></i>&nbsp; Password</label>
+                    </div>
+                    <input type="submit" value="Create account!">
+                    <div class="signup_link">
+                        Already a member? <a href="index(2).html">Login!</a>
+                    </div>
+                </form>
+            </div>
         </center>
-    <script>
-       var form = document.getElementById('sheetdb-form');
-    form.addEventListener("submit", e => {
-      e.preventDefault();
-      fetch(form.action, {
-          method : "POST",
-          body: new FormData(document.getElementById("sheetdb-form")),
-      }).then(
-          response => response.json()
-      ).then((html) => {
-        window.location.href = 'google.com';
-      });
-    });
-    </script>
-
-        
-      
+        <script>
+            var form = document.getElementById('sheetdb-form');
+            form.addEventListener("submit", e => {
+                e.preventDefault();
+                fetch(form.action, {
+                    method: "POST",
+                    body: new FormData(document.getElementById("sheetdb-form")),
+                }).then(
+                    response => response.json()
+                ).then((html) => {
+                    window.location.href = 'index(7).html';
+                });
+            });
+        </script>
+    </body>
+</html>

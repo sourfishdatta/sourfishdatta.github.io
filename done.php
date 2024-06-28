@@ -1,3 +1,33 @@
+<?php 
+session_start();
+
+// Initialize $db connection (assuming you have a separate server.php for database connection)
+include('server.php'); // Adjust path if necessary
+
+// Check if user is logged in
+if (isset($_SESSION['email'])) {
+    // Query to fetch user's full name based on email
+    $email = $_SESSION['email'];
+    $query = "SELECT fullname FROM users WHERE email='$email'";
+    $result = mysqli_query($db, $query); // Use $db which should be initialized in server.php
+
+    if ($result) {
+        $user = mysqli_fetch_assoc($result);
+        if ($user) {
+            $fullname = $user['fullname'];
+        } else {
+            $fullname = "Guest"; // Default name if user not found
+        }
+    } else {
+        // Handle query error
+        echo "Query error: " . mysqli_error($db);
+        // You might want to redirect or display an error message here
+    }
+} else {
+    $fullname = "Guest"; // Default name if not logged in
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,24 +61,36 @@
                 <li><a href="index(1).html">Tournaments</a></li>
                 <li><a href="index(4).html">ACS Live</a></li>
                 <li><a href="#">Resources</a></li>
-                <li><a href="login.php">Sign In</a></li>
+                <!-- Check if logged in, show full name or guest -->
+                <li><a href="login.php"><?php echo isset($_SESSION['email']) ? $fullname : 'Sign In'; ?></a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="intro">
+    <main>
+    <section class="intro">
+        <?php if (isset($_SESSION['email'])) : ?>
+            <h1>Welcome, <?php echo $fullname; ?></h1>
+            <p>Your ultimate destination for crossword enthusiasts.</p>
+            <button><a href="#">Play the Daily</a></button>
+            <button><a href="index(1).html">Upcoming Tournaments</a></button>
+        <?php else : ?>
             <h1>Welcome to the American Crossword Society</h1>
             <p>Your ultimate destination for crossword enthusiasts.</p>
             <button><a href="#">Play the Daily</a></button>
             <button><a href="index(1).html">Upcoming Tournaments</a></button>
-            <h2>About</h2>
-            <div class="uno">
-                <p class="child">The American Crossword Society was started in 2024 by 13-year-old crossword enthusiast Sourish Datta. Motivated by a desire to foster a community for crossword enthusiasts like himself, Sourish took the initiative to establish an organization that would unite puzzle solvers of America.</p>
-                <img src="https://images.pexels.com/photos/13533591/pexels-photo-13533591.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-               <p class="child">Doing crosswords keeps your mind sharp, enhancing vocabulary, memory, and problem-solving skills. It provides mental stimulation, a sense of accomplishment, and relaxation, helping to maintain cognitive health and agility. Plus, it's a fun way to challenge yourself and learn daily.</p>
-            </div>
-        </section>
+        <?php endif; ?>
+        <h2>About</h2>
+        <div class="uno">
+            <p class="child">The American Crossword Society was started in 2024 by 13-year-old crossword enthusiast Sourish Datta. Motivated by a desire to foster a community for crossword enthusiasts like himself, Sourish took the initiative to establish an organization that would unite puzzle solvers of America.</p>
+            <img src="https://images.pexels.com/photos/13533591/pexels-photo-13533591.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+            <p class="child">Doing crosswords keeps your mind sharp, enhancing vocabulary, memory, and problem-solving skills. It provides mental stimulation, a sense of accomplishment, and relaxation, helping to maintain cognitive health and agility. Plus, it's a fun way to challenge yourself and learn daily.</p>
+        </div>
+    </section>
+</main>
+
+
     </main>
 
     <footer>
