@@ -1,0 +1,414 @@
+body {
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+#crossword {
+    display: inline-block;
+    margin: 20px auto; /* Centers the crossword grid */
+    width: 600px; /* Adjust width as needed */
+}
+
+.row {
+    display: flex;
+    justify-content: center; /* Centers the rows within the grid */
+}
+
+input[type="text"] {
+    width: 60px; /* Increase cell width for larger grid */
+    height: 60px; /* Increase cell height for larger grid */
+    text-align: center;
+    font-size: 40px; /* Adjust font size */
+    margin: 3px; /* Adjust margin */
+    border: 1px solid #000;
+    border-radius: 3px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.highlight {
+    background-color: rgb(210, 210, 210);
+}
+
+#clues {
+    margin-top: 20px;
+    text-align: left;
+    display: inline-block;
+}
+
+#clues p {
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.clue-highlight {
+    background-color: rgb(210, 210, 210);
+}
+
+button {
+    font-family: 'DM Sans', sans-serif;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+}
+
+.incorrect {
+    border: 2px solid red; /* Red border for incorrect cells */
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #000;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.slideshow {
+    display: flex;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.slideshow img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.intro {
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.2);
+}
+
+.intro button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.socials a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.header-content .logo-text a, 
+.intro button a {
+    color: white;
+    text-decoration: none;
+}
+input[type="text"]
+{
+    font-family: 'DM Sans', sans-serif;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+
+}
+
+ td a { 
+    display: block; 
+    text-decoration: none;
+ }
+
+ .hint {
+    color: #888; /* Color for hint text */
+    font-weight: bold; /* Make hint text bold */
+}
+
+.revealed {
+    color: rgb(159, 159, 159); /* Example: Change color to green when revealed */
+    font-weight: bold; /* Example: Apply bold font to revealed letters */
+    /* Add any other styling as needed */
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #000;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.slideshow {
+    display: flex;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.slideshow img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.intro {
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.2);
+}
+
+.intro button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.socials a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.header-content .logo-text a, 
+.intro button a {
+    color: white;
+    text-decoration: none;
+}
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+    background-color: #000;
+    color: #fff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #000;
+}
+
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #000;
+}
+
+/* Scrollbar styling for Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #000;
+}
+
+.pagination {
+    display: inline-block;
+    text-align: center;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #fff;
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.socials a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 18px;
+    text-decoration: none;
+    opacity: 40%;
+}
+
+input[type="text"]
+{
+    font-family: 'DM Sans', sans-serif;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+
+}
+
+ td a { 
+    display: block; 
+    text-decoration: none;
+ }
+
+ button.share-button {
+    background-color: #008cba;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}

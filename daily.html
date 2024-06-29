@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Crossword</title>
+    <link rel="stylesheet" href="practice.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/e/e2/Acs_favicon.png">
+    <script src="https://kit.fontawesome.com/e07ccf7e6a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <div class="header-content">
+        <div class="logo-image">
+            <a href="index.html">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Asc_large.png" alt="ACS Logo" style="width:50px;height:50px;">
+            </a>
+        </div>
+        <div class="logo-text">
+            <a href="index.html">American Crossword Society</a>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Daily</a></li>
+            <li><a href="#">Forums</a></li>
+            <li><a href="index(1).html">Tournaments</a></li>
+            <li><a href="regs.php">Regulations</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="login.php">Sign In</a></li>
+        </ul>
+    </nav>
+</header>
+    <h1>The Daily (6/28/24)</h1>
+    <div id="crossword">
+        <div class="row" id="row-0" onclick="selectRow(0)">
+            <input type="text" maxlength="1" id="cell-0-0" onkeydown="handleKey(event, 0, 0)">
+            <input type="text" maxlength="1" id="cell-0-1" onkeydown="handleKey(event, 0, 1)">
+            <input type="text" maxlength="1" id="cell-0-2" onkeydown="handleKey(event, 0, 2)">
+            <input type="text" maxlength="1" id="cell-0-3" onkeydown="handleKey(event, 0, 3)">
+            <input type="text" maxlength="1" id="cell-0-4" onkeydown="handleKey(event, 0, 4)">
+        </div>
+        <div class="row" id="row-1" onclick="selectRow(1)">
+            <input type="text" maxlength="1" id="cell-1-0" onkeydown="handleKey(event, 1, 0)">
+            <input type="text" maxlength="1" id="cell-1-1" onkeydown="handleKey(event, 1, 1)">
+            <input type="text" maxlength="1" id="cell-1-2" onkeydown="handleKey(event, 1, 2)">
+            <input type="text" maxlength="1" id="cell-1-3" onkeydown="handleKey(event, 1, 3)">
+            <input type="text" maxlength="1" id="cell-1-4" onkeydown="handleKey(event, 1, 4)">
+        </div>
+        <div class="row" id="row-2" onclick="selectRow(2)">
+            <input type="text" maxlength="1" id="cell-2-0" onkeydown="handleKey(event, 2, 0)">
+            <input type="text" maxlength="1" id="cell-2-1" onkeydown="handleKey(event, 2, 1)">
+            <input type="text" maxlength="1" id="cell-2-2" onkeydown="handleKey(event, 2, 2)">
+            <input type="text" maxlength="1" id="cell-2-3" onkeydown="handleKey(event, 2, 3)">
+            <input type="text" maxlength="1" id="cell-2-4" onkeydown="handleKey(event, 2, 4)">
+        </div>
+        <div class="row" id="row-3" onclick="selectRow(3)">
+            <input type="text" maxlength="1" id="cell-3-0" onkeydown="handleKey(event, 3, 0)">
+            <input type="text" maxlength="1" id="cell-3-1" onkeydown="handleKey(event, 3, 1)">
+            <input type="text" maxlength="1" id="cell-3-2" onkeydown="handleKey(event, 3, 2)">
+            <input type="text" maxlength="1" id="cell-3-3" onkeydown="handleKey(event, 3, 3)">
+            <input type="text" maxlength="1" id="cell-3-4" onkeydown="handleKey(event, 3, 4)">
+        </div>
+        <div class="row" id="row-4" onclick="selectRow(4)">
+            <input type="text" maxlength="1" id="cell-4-0" onkeydown="handleKey(event, 4, 0)">
+            <input type="text" maxlength="1" id="cell-4-1" onkeydown="handleKey(event, 4, 1)">
+            <input type="text" maxlength="1" id="cell-4-2" onkeydown="handleKey(event, 4, 2)">
+            <input type="text" maxlength="1" id="cell-4-3" onkeydown="handleKey(event, 4, 3)">
+            <input type="text" maxlength="1" id="cell-4-4" onkeydown="handleKey(event, 4, 4)">
+        </div>
+    </div>
+    <div id="clues">
+        <h3>Across:</h3>
+        <p id="clue-row-0" onclick="selectRow(0)">Quitter's comment</p>
+        <p id="clue-row-1" onclick="selectRow(1)">Shish ______</p>
+        <p id="clue-row-2" onclick="selectRow(2)">Balder's wife</p>
+        <p id="clue-row-3" onclick="selectRow(3)">Kuwaiti Leader</p>
+        <p id="clue-row-4" onclick="selectRow(4)">Toad features</p>
+        <h3>Down:</h3>
+        <p id="clue-col-0" onclick="selectColumn(0)">"No surprise to me"</p>
+        <p id="clue-col-1" onclick="selectColumn(1)">African Fox</p>
+        <p id="clue-col-2" onclick="selectColumn(2)">Civil War general Doubleday</p>
+        <p id="clue-col-3" onclick="selectColumn(3)">Octet plus one</p>
+        <p id="clue-col-4" onclick="selectColumn(4)">Skier's transports, per se</p>
+    </div>
+    <button onclick="checkCrossword()">Check Answers</button>
+    <div id="message"></div>
+    <div id="message" ></div>
+    </div>
+
+    <script src="practice.js"></script>
+</body>
+</html>
