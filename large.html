@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Crossword</title>
+    <link rel="stylesheet" href="large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/e/e2/Acs_favicon.png">
+    <script src="https://kit.fontawesome.com/e07ccf7e6a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-image">
+                <a href="index.html">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Asc_large.png" alt="ACS Logo" style="width:50px;height:50px;">
+                </a>
+            </div>
+            <div class="logo-text">
+                <a href="index.html">American Crossword Society</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Daily</a></li>
+                <li><a href="#">Forums</a></li>
+                <li><a href="index(1).html">Tournaments</a></li>
+                <li><a href="regs.php">Regulations</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="login.php">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>The Daily (6/28/24)</h1>
+    <div id="parent">
+        <div id="crossword-and-clues-container">
+            <div class="crossword-container child">
+                <div id="crossword">
+        <div class="row" id="row-0" onclick="selectRow(0)" oninput="capitalizeInput(this)"> 
+            <div class="crossword-cell">
+            <span class="word-label">1</span>
+            <input type="text" maxlength="1" id="cell-0-0" onkeydown="handleKey(event, 0, 0)" oninput="capitalizeInput(this)" oninput="capitalizeInput(this)"> 
+        </div>
+            <div class="crossword-cell">
+            <span class="word-label">2</span>
+            <input type="text" maxlength="1" id="cell-0-1" onkeydown="handleKey(event, 0, 1)" oninput="capitalizeInput(this)" oninput="capitalizeInput(this)"> 
+        </div>
+        <div class="crossword-cell">
+            <span class="word-label">3</span>
+            <input type="text" maxlength="1" id="cell-0-2" onkeydown="handleKey(event, 0, 2)" oninput="capitalizeInput(this)" oninput="capitalizeInput(this)"> 
+            </div>
+            <div class="crossword-cell">
+                <span class="word-label">4</span>
+            <input type="text" maxlength="1" id="cell-0-3" onkeydown="handleKey(event, 0, 3)" oninput="capitalizeInput(this)" oninput="capitalizeInput(this)"> 
+            </div>
+            
+            <input type="text" maxlength="1" id="cell-0-4" onkeydown="handleKey(event, 0, 4)"  class="black" disabled oninput="capitalizeInput(this)" oninput="capitalizeInput(this)"> 
+            <div class="crossword-cell">
+                <span class="word-label">5</span>
+            <input type="text" maxlength="1" id="cell-0-5" onkeydown="handleKey(event, 0, 5)" oninput="capitalizeInput(this)" oninput="capitalizeInput(this)"> 
+            </div>
+            <div class="crossword-cell">
+                <span class="word-label">6</span>
+            <input type="text" maxlength="1" id="cell-0-6" onkeydown="handleKey(event, 0, 6)" oninput="capitalizeInput(this)" oninput="capitalizeInput(this)">  
+            </div>
+            <div class="crossword-cell">
+                <span class="word-label">7</span>
+            <input type="text" maxlength="1" id="cell-0-7" onkeydown="handleKey(event, 0, 7)" oninput="capitalizeInput(this)" oninput="capitalizeInput(this)"> 
+            </div>
+            <div class="crossword-cell">
+                <span class="word-label">8</span>
+            <input type="text" maxlength="1" id="cell-0-8" onkeydown="handleKey(event, 0, 8)" oninput="capitalizeInput(this)" oninput="capitalizeInput(this)"> 
+            </div>
+            <div class="crossword-cell">
+                <span class="word-label">9</span>
+            <input type="text" maxlength="1" id="cell-0-9" onkeydown="handleKey(event, 0, 9)" oninput="capitalizeInput(this)" oninput="capitalizeInput(this)"> 
+          </div>
+                <input type="text" maxlength="1" id="cell-0-10" onkeydown="handleKey(event, 0, 10)" class="black" disabled oninput="capitalizeInput(this)" oninput="capitalizeInput(this)">  
+                <div class="crossword-cell">
+                    <span class="word-label">10</span>
+                <input type="text" maxlength="1" id="cell-0-11" onkeydown="handleKey(event, 0, 11)"oninput="capitalizeInput(this)" oninput="capitalizeInput(this)"> 
+           </div>
+           <div class="crossword-cell">
+            <span class="word-label">11</span>
+                <input type="text" maxlength="1" id="cell-0-12" onkeydown="handleKey(event, 0, 12)"oninput="capitalizeInput(this)" oninput="capitalizeInput(this)"> 
+           </div>
+           <div class="crossword-cell">
+            <span class="word-label">12</span>
+           <input type="text" maxlength="1" id="cell-0-13" onkeydown="handleKey(event, 0, 13)"oninput="capitalizeInput(this)" oninput="capitalizeInput(this)"> 
+           </div> 
+           <div class="crossword-cell">
+            <span class="word-label">13</span>
+           <input type="text" maxlength="1" id="cell-0-14" onkeydown="handleKey(event, 0, 14)"oninput="capitalizeInput(this)" oninput="capitalizeInput(this)"> 
+        </div>
+        </div>
+        <!-- Repeat the above div for each row from 1 to 14 -->
+        <div class="row" id="row-1" onclick="selectRow(1)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-1-0" onkeydown="handleKey(event, 1, 0)" oninput="capitalizeInput(this)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-1-1" onkeydown="handleKey(event, 1, 1)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-1-2" onkeydown="handleKey(event, 1, 2)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-1-3" onkeydown="handleKey(event, 1, 3)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-1-4" onkeydown="handleKey(event, 1, 4)"  class="black" disabled>
+            <input type="text" maxlength="1" id="cell-1-5" onkeydown="handleKey(event, 1, 5)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-1-6" onkeydown="handleKey(event, 1, 6)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-1-7" onkeydown="handleKey(event, 1, 7)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-1-8" onkeydown="handleKey(event, 1, 8)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-1-9" onkeydown="handleKey(event, 1, 9)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-1-10" onkeydown="handleKey(event, 1, 10)"  class="black" disabled>
+            <input type="text" maxlength="1" id="cell-1-11" onkeydown="handleKey(event, 1, 11)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-1-12" onkeydown="handleKey(event, 1, 12)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-1-13" onkeydown="handleKey(event, 1, 13)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-1-14" onkeydown="handleKey(event, 1, 14)" oninput="capitalizeInput(this)"> 
+        </div>
+        <!-- Repeat the above div for each row from 2 to 14, similar to the first two rows -->
+        <!-- Continue this pattern until all 15 rows are generated -->
+        <div class="row" id="row-2" onclick="selectRow(2)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-2-0" onkeydown="handleKey(event, 2, 0)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-2-1" onkeydown="handleKey(event, 2, 1)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-2-2" onkeydown="handleKey(event, 2, 2)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-2-3" onkeydown="handleKey(event, 2, 3)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-2-4" onkeydown="handleKey(event, 2, 4)" class="black" disabled>
+            <input type="text" maxlength="1" id="cell-2-5" onkeydown="handleKey(event, 2, 5)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-2-6" onkeydown="handleKey(event, 2, 6)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-2-7" onkeydown="handleKey(event, 2, 7)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-2-8" onkeydown="handleKey(event, 2, 8)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-2-9" onkeydown="handleKey(event, 2, 9)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-2-10" onkeydown="handleKey(event, 2, 10)" class="black" disabled>
+            <input type="text" maxlength="1" id="cell-2-11" onkeydown="handleKey(event, 2, 11)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-2-12" onkeydown="handleKey(event, 2, 12)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-2-13" onkeydown="handleKey(event, 2, 13)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-2-14" onkeydown="handleKey(event, 2, 14)" oninput="capitalizeInput(this)"> 
+        </div>
+        <!-- Repeat for rows 3 to 14 -->
+        <div class="row" id="row-3" onclick="selectRow(3)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-3-0" onkeydown="handleKey(event, 3, 0)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-3-1" onkeydown="handleKey(event, 3, 1)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-3-2" onkeydown="handleKey(event, 3, 2)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-3-3" onkeydown="handleKey(event, 3, 3)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-3-4" onkeydown="handleKey(event, 3, 4)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-3-5" onkeydown="handleKey(event, 3, 5)" >
+            <input type="text" maxlength="1" id="cell-3-6" onkeydown="handleKey(event, 3, 6)"  class="black" disabled>
+            <input type="text" maxlength="1" id="cell-3-7" onkeydown="handleKey(event, 3, 7)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-3-8" onkeydown="handleKey(event, 3, 8)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-3-9" onkeydown="handleKey(event, 3, 9)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-3-10" onkeydown="handleKey(event, 3, 10)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-3-11" onkeydown="handleKey(event, 3, 11)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-3-12" onkeydown="handleKey(event, 3, 12)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-3-13" onkeydown="handleKey(event, 3, 13)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-3-14" onkeydown="handleKey(event, 3, 14)" oninput="capitalizeInput(this)"> 
+        </div>
+        <!-- Repeat similarly for rows 4 to 14 -->
+        <div class="row" id="row-4" onclick="selectRow(4)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-4-0" onkeydown="handleKey(event, 4, 0)"  class="black" disabled>
+            <input type="text" maxlength="1" id="cell-4-1" onkeydown="handleKey(event, 4, 1)" class="black" disabled>
+            <input type="text" maxlength="1" id="cell-4-2" onkeydown="handleKey(event, 4, 2)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-4-3" onkeydown="handleKey(event, 4, 3)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-4-4" onkeydown="handleKey(event, 4, 4)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-4-5" onkeydown="handleKey(event, 4, 5)"  class="black" disabled>
+            <input type="text" maxlength="1" id="cell-4-6" onkeydown="handleKey(event, 4, 6)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-4-7" onkeydown="handleKey(event, 4, 7)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-4-8" onkeydown="handleKey(event, 4, 8)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-4-9" onkeydown="handleKey(event, 4, 9)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-4-10" onkeydown="handleKey(event, 4, 10)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-4-11" onkeydown="handleKey(event, 4, 11)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-4-12" onkeydown="handleKey(event, 4, 12)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-4-13" onkeydown="handleKey(event, 4, 13)"  class="black" disabled>
+            <input type="text" maxlength="1" id="cell-4-14" onkeydown="handleKey(event, 4, 14)"  class="black" disabled>
+        </div>
+        <div class="row" id="row-5" onclick="selectRow(5)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-5-0" onkeydown="handleKey(event, 5, 0)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-5-1" onkeydown="handleKey(event, 5, 1)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-5-2" onkeydown="handleKey(event, 5, 2)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-5-3" onkeydown="handleKey(event, 5, 3)"   class="black" disabled>
+            <input type="text" maxlength="1" id="cell-5-4" onkeydown="handleKey(event, 5, 4)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-5-5" onkeydown="handleKey(event, 5, 5)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-5-6" onkeydown="handleKey(event, 5, 6)" >
+            <input type="text" maxlength="1" id="cell-5-7" onkeydown="handleKey(event, 5, 7)"  class="black" disabled>
+            <input type="text" maxlength="1" id="cell-5-8" onkeydown="handleKey(event, 5, 8)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-5-9" onkeydown="handleKey(event, 5, 9)" >
+            <input type="text" maxlength="1" id="cell-5-10" onkeydown="handleKey(event, 5, 10)" >
+            <input type="text" maxlength="1" id="cell-5-11" onkeydown="handleKey(event, 5, 11)"class="black" disabled>
+            <input type="text" maxlength="1" id="cell-5-12" onkeydown="handleKey(event, 5, 12)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-5-13" onkeydown="handleKey(event, 5, 13)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-5-14" onkeydown="handleKey(event, 5, 14)" oninput="capitalizeInput(this)"> 
+        </div>
+        <div class="row" id="row-6" onclick="selectRow(6)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-6-0" onkeydown="handleKey(event, 6, 0)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-6-1" onkeydown="handleKey(event, 6, 1)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-6-2" onkeydown="handleKey(event, 6, 2)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-6-3" onkeydown="handleKey(event, 6, 3)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-6-4" onkeydown="handleKey(event, 6, 4)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-6-5" onkeydown="handleKey(event, 6, 5)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-6-6" onkeydown="handleKey(event, 6, 6)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-6-7" onkeydown="handleKey(event, 6, 7)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-6-8" onkeydown="handleKey(event, 6, 8)"  class="black" disabled>
+            <input type="text" maxlength="1" id="cell-6-9" onkeydown="handleKey(event, 6, 9)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-6-10" onkeydown="handleKey(event, 6, 10)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-6-11" onkeydown="handleKey(event, 6, 11)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-6-12" onkeydown="handleKey(event, 6, 12)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-6-13" onkeydown="handleKey(event, 6, 13)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-6-14" onkeydown="handleKey(event, 6, 14)" oninput="capitalizeInput(this)"> 
+        </div>
+        <div class="row" id="row-7" onclick="selectRow(7)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-7-0" onkeydown="handleKey(event, 7, 0)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-7-1" onkeydown="handleKey(event, 7, 1)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-7-2" onkeydown="handleKey(event, 7, 2)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-7-3" onkeydown="handleKey(event, 7, 3)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-7-4" onkeydown="handleKey(event, 7, 4)"  class="black" disabled>
+            <input type="text" maxlength="1" id="cell-7-5" onkeydown="handleKey(event, 7, 5)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-7-6" onkeydown="handleKey(event, 7, 6)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-7-7" onkeydown="handleKey(event, 7, 7)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-7-8" onkeydown="handleKey(event, 7, 8)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-7-9" onkeydown="handleKey(event, 7, 9)" >
+            <input type="text" maxlength="1" id="cell-7-10" onkeydown="handleKey(event, 7, 10)" class="black" disabled>
+            <input type="text" maxlength="1" id="cell-7-11" onkeydown="handleKey(event, 7, 11)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-7-12" onkeydown="handleKey(event, 7, 12)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-7-13" onkeydown="handleKey(event, 7, 13)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-7-14" onkeydown="handleKey(event, 7, 14)" oninput="capitalizeInput(this)"> 
+        </div>
+        <div class="row" id="row-8" onclick="selectRow(8)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-8-0" onkeydown="handleKey(event, 8, 0)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-8-1" onkeydown="handleKey(event, 8, 1)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-8-2" onkeydown="handleKey(event, 8, 2)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-8-3" onkeydown="handleKey(event, 8, 3)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-8-4" onkeydown="handleKey(event, 8, 4)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-8-5" onkeydown="handleKey(event, 8, 5)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-8-6" onkeydown="handleKey(event, 8, 6)"  class="black" disabled>
+            <input type="text" maxlength="1" id="cell-8-7" onkeydown="handleKey(event, 8, 7)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-8-8" onkeydown="handleKey(event, 8, 8)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-8-9" onkeydown="handleKey(event, 8, 9)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-8-10" onkeydown="handleKey(event, 8, 10)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-8-11" onkeydown="handleKey(event, 8, 11)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-8-12" onkeydown="handleKey(event, 8, 12)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-8-13" onkeydown="handleKey(event, 8, 13)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-8-14" onkeydown="handleKey(event, 8, 14)" oninput="capitalizeInput(this)"> 
+        </div>
+        <div class="row" id="row-9" onclick="selectRow(9)" oninput="capitalizeInput(this)"> 
+            <div class="crossword-cell">
+                <span class="word-label">1</span>
+                <input type="text" maxlength="1" id="cell-9-0" onkeydown="handleKey(event, 9, 0)" oninput="capitalizeInput(this)" oninput="capitalizeInput(this)"> 
+            </div>
+            <div class="crossword-cell">
+                <input type="text" maxlength="1" id="cell-9-1" onkeydown="handleKey(event, 9, 1)" oninput="capitalizeInput(this)" oninput="capitalizeInput(this)"> 
+            </div>
+            <div class="crossword-cell">
+                <input type="text" maxlength="1" id="cell-9-2" onkeydown="handleKey(event, 9, 2)" oninput="capitalizeInput(this)" oninput="capitalizeInput(this)"> 
+            </div>
+            <div class="crossword-cell">
+                <span class="word-label">2</span>
+                <input type="text" maxlength="1" id="cell-9-3" class="black" disabled>
+            </div>
+            <div class="crossword-cell">
+                <input type="text" maxlength="1" id="cell-9-4" onkeydown="handleKey(event, 9, 4)" oninput="capitalizeInput(this)" oninput="capitalizeInput(this)"> 
+            </div>
+            <div class="crossword-cell">
+                <input type="text" maxlength="1" id="cell-9-5" onkeydown="handleKey(event, 9, 5)" oninput="capitalizeInput(this)" oninput="capitalizeInput(this)"> 
+            </div>
+            <div class="crossword-cell">
+                <input type="text" maxlength="1" id="cell-9-6" onkeydown="handleKey(event, 9, 6)" oninput="capitalizeInput(this)" oninput="capitalizeInput(this)"> 
+            </div>
+            <div class="crossword-cell">
+                <span class="word-label">3</span>
+                <input type="text" maxlength="1" id="cell-9-7" class="black" disabled>
+            </div>
+            <div class="crossword-cell">
+                <input type="text" maxlength="1" id="cell-9-8" onkeydown="handleKey(event, 9, 8)" oninput="capitalizeInput(this)" oninput="capitalizeInput(this)"> 
+            </div>
+            <div class="crossword-cell">
+                <input type="text" maxlength="1" id="cell-9-9" onkeydown="handleKey(event, 9, 9)" oninput="capitalizeInput(this)" oninput="capitalizeInput(this)"> 
+            </div>
+            <div class="crossword-cell">
+                <input type="text" maxlength="1" id="cell-9-10" onkeydown="handleKey(event, 9, 10)" oninput="capitalizeInput(this)" oninput="capitalizeInput(this)"> 
+            </div>
+            <div class="crossword-cell">
+                <span class="word-label">4</span>
+                <input type="text" maxlength="1" id="cell-9-11" class="black" disabled>
+            </div>
+            <div class="crossword-cell">
+                <input type="text" maxlength="1" id="cell-9-12" onkeydown="handleKey(event, 9, 12)" oninput="capitalizeInput(this)" oninput="capitalizeInput(this)"> 
+            </div>
+            <div class="crossword-cell">
+                <input type="text" maxlength="1" id="cell-9-13" onkeydown="handleKey(event, 9, 13)" oninput="capitalizeInput(this)" oninput="capitalizeInput(this)"> 
+            </div>
+            <div class="crossword-cell">
+                <input type="text" maxlength="1" id="cell-9-14" onkeydown="handleKey(event, 9, 14)" oninput="capitalizeInput(this)" oninput="capitalizeInput(this)"> 
+            </div>
+        </div>
+        <text x="5.00" y="36.83" text-anchor="start" font-size="33.33" data-testid="cell-text"></text>
+        <div class="row" id="row-10" onclick="selectRow(10)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-10-0" onkeydown="handleKey(event, 10, 0)"  class="black" disabled>
+            <input type="text" maxlength="1" id="cell-10-1" onkeydown="handleKey(event, 10, 1)"  class="black" disabled>
+            <input type="text" maxlength="1" id="cell-10-2" onkeydown="handleKey(event, 10, 2)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-10-3" onkeydown="handleKey(event, 10, 3)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-10-4" onkeydown="handleKey(event, 10, 4)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-10-5" onkeydown="handleKey(event, 10, 5)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-10-6" onkeydown="handleKey(event, 10, 6)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-10-7" onkeydown="handleKey(event, 10, 7)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-10-8" onkeydown="handleKey(event, 10, 8)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-10-9" onkeydown="handleKey(event, 10, 9)"  class="black" disabled>
+            <input type="text" maxlength="1" id="cell-10-10" onkeydown="handleKey(event, 10, 10)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-10-11" onkeydown="handleKey(event, 10, 11)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-10-12" onkeydown="handleKey(event, 10, 12)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-10-13" onkeydown="handleKey(event, 10, 13)"  class="black" disabled>
+            <input type="text" maxlength="1" id="cell-10-14" onkeydown="handleKey(event, 10, 14)"  class="black" disabled>
+        </div>
+        <div class="row" id="row-11" onclick="selectRow(11)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-11-0" onkeydown="handleKey(event, 11, 0)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-11-1" onkeydown="handleKey(event, 11, 1)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-11-2" onkeydown="handleKey(event, 11, 2)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-11-3" onkeydown="handleKey(event, 11, 3)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-11-4" onkeydown="handleKey(event, 11, 4)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-11-5" onkeydown="handleKey(event, 11, 5)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-11-6" onkeydown="handleKey(event, 11, 6)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-11-7" onkeydown="handleKey(event, 11, 7)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-11-8" onkeydown="handleKey(event, 11, 8)"  class="black" disabled>
+            <input type="text" maxlength="1" id="cell-11-9" onkeydown="handleKey(event, 11, 9)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-11-10" onkeydown="handleKey(event, 11, 10)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-11-11" onkeydown="handleKey(event, 11, 11)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-11-12" onkeydown="handleKey(event, 11, 12)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-11-13" onkeydown="handleKey(event, 11, 13)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-11-14" onkeydown="handleKey(event, 11, 14)" oninput="capitalizeInput(this)"> 
+        </div>
+        <div class="row" id="row-12" onclick="selectRow(12)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-12-0" onkeydown="handleKey(event, 12, 0)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-12-1" onkeydown="handleKey(event, 12, 1)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-12-2" onkeydown="handleKey(event, 12, 2)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-12-3" onkeydown="handleKey(event, 12, 3)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-12-4" onkeydown="handleKey(event, 12, 4)" class="black" disabled>
+            <input type="text" maxlength="1" id="cell-12-5" onkeydown="handleKey(event, 12, 5)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-12-6" onkeydown="handleKey(event, 12, 6)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-12-7" onkeydown="handleKey(event, 12, 7)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-12-8" onkeydown="handleKey(event, 12, 8)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-12-9" onkeydown="handleKey(event, 12, 9)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-12-10" onkeydown="handleKey(event, 12, 10)" class="black" disabled>
+            <input type="text" maxlength="1" id="cell-12-11" onkeydown="handleKey(event, 12, 11)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-12-12" onkeydown="handleKey(event, 12, 12)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-12-13" onkeydown="handleKey(event, 12, 13)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-12-14" onkeydown="handleKey(event, 12, 14)" oninput="capitalizeInput(this)"> 
+        </div>
+        <div class="row" id="row-13" onclick="selectRow(13)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-13-0" onkeydown="handleKey(event, 13, 0)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-13-1" onkeydown="handleKey(event, 13, 1)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-13-2" onkeydown="handleKey(event, 13, 2)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-13-3" onkeydown="handleKey(event, 13, 3)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-13-4" onkeydown="handleKey(event, 13, 4)" class="black" disabled>
+            <input type="text" maxlength="1" id="cell-13-5" onkeydown="handleKey(event, 13, 5)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-13-6" onkeydown="handleKey(event, 13, 6)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-13-7" onkeydown="handleKey(event, 13, 7)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-13-8" onkeydown="handleKey(event, 13, 8)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-13-9" onkeydown="handleKey(event, 13, 9)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-13-10" onkeydown="handleKey(event, 13, 10)" class="black" disabled>
+            <input type="text" maxlength="1" id="cell-13-11" onkeydown="handleKey(event, 13, 11)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-13-12" onkeydown="handleKey(event, 13, 12)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-13-13" onkeydown="handleKey(event, 13, 13)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-13-14" onkeydown="handleKey(event, 13, 14)" oninput="capitalizeInput(this)"> 
+        </div>
+        <div class="row" id="row-14" onclick="selectRow(14)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-14-0" onkeydown="handleKey(event, 14, 0)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-14-1" onkeydown="handleKey(event, 14, 1)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-14-2" onkeydown="handleKey(event, 14, 2)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-14-3" onkeydown="handleKey(event, 14, 3)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-14-4" onkeydown="handleKey(event, 14, 4)" class="black" disabled>
+            <input type="text" maxlength="1" id="cell-14-5" onkeydown="handleKey(event, 14, 5)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-14-6" onkeydown="handleKey(event, 14, 6)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-14-7" onkeydown="handleKey(event, 14, 7)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-14-8" onkeydown="handleKey(event, 14, 8)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-14-9" onkeydown="handleKey(event, 14, 9)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-14-10" onkeydown="handleKey(event, 14, 10)" class="black" disabled>
+            <input type="text" maxlength="1" id="cell-14-11" onkeydown="handleKey(event, 14, 11)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-14-12" onkeydown="handleKey(event, 14, 12)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-14-13" onkeydown="handleKey(event, 14, 13)" oninput="capitalizeInput(this)"> 
+            <input type="text" maxlength="1" id="cell-14-14" onkeydown="handleKey(event, 14, 14)" oninput="capitalizeInput(this)"> 
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<br><br>
+<div class="clues-container child">
+    <div id="clues">
+        <div style="height:627px;width:210px;border:1px solid #ccc;overflow:auto;">
+            <h3>Across:</h3>
+            <p id="clue-row-0" onclick="selectRow(0)">Quitter's comment</p>
+            <p id="clue-row-1" onclick="selectRow(1)">Shish ______</p>
+            <p id="clue-row-2" onclick="selectRow(2)">Get ready to drive</p>
+            <p id="clue-row-3" onclick="selectRow(3)">Gallivants</p>
+            <p id="clue-row-4" onclick="selectRow(4)">Takes steps</p>
+            <p id="clue-row-5" onclick="selectRow(5)">Nothing else but</p>
+            <p id="clue-row-6" onclick="selectRow(6)">Boy!</p>
+            <p id="clue-row-7" onclick="selectRow(7)">Go yachting</p>
+            <p id="clue-row-8" onclick="selectRow(8)">Needing a scrubbing</p>
+            <p id="clue-row-9" onclick="selectRow(9)">More pleasant</p>
+            <p id="clue-row-10" onclick="selectRow(10)">Stick out</p>
+            <p id="clue-row-11" onclick="selectRow(11)">Ms. Thurman</p>
+            <p id="clue-row-12" onclick="selectRow(12)">This land is your land</p>
+            <p id="clue-row-13" onclick="selectRow(13)">Muscular fellow</p>
+            <p id="clue-row-14" onclick="selectRow(14)">More kind</p>
+
+            <h3>Down:</h3>
+            <p id="clue-col-0" onclick="selectColumn(0)">"No surprise to me"</p>
+            <p id="clue-col-1" onclick="selectColumn(1)">African Fox</p>
+            <p id="clue-col-2" onclick="selectColumn(2)">In addition</p>
+            <p id="clue-col-3" onclick="selectColumn(3)">Letter starter</p>
+            <p id="clue-col-4" onclick="selectColumn(4)">Persian Gulf Kingdom</p>
+            <p id="clue-col-5" onclick="selectColumn(5)">Snack item</p>
+            <p id="clue-col-6" onclick="selectColumn(6)">Comic Johnson</p>
+            <p id="clue-col-7" onclick="selectColumn(7)">Southern California airport letters</p>
+            <p id="clue-col-8" onclick="selectColumn(8)">Pay dirt</p>
+            <p id="clue-col-9" onclick="selectColumn(9)">Bingo-like game</p>
+            <p id="clue-col-10" onclick="selectColumn(10)">Love personified</p>
+            <p id="clue-col-11" onclick="selectColumn(11)">Magnet end</p>
+            <p id="clue-col-12" onclick="selectColumn(12)">Important time</p>
+            <p id="clue-col-13" onclick="selectColumn(13)">Of the kidneys</p>
+            <p id="clue-col-14" onclick="selectColumn(14)">Attacked</p>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<button onclick="checkCrossword()">Check Answers</button>
+    <div id="message"></div>
+    <div id="message2"></div>
+<footer>
+    <div class="socials">
+        <a href="https://www.instagram.com/cubingsimplified/" target="_blank">
+            <i class="fa-brands fa-instagram" alt="Instagram"></i>
+        </a>
+        <a href="https://discord.gg/SeEMV3dsN4" target="_blank">
+            <i class="fa-brands fa-discord" alt="Discord"></i>
+        </a>
+        <a href="https://github.com/CubingSimplified" target="_blank">
+            <i class="fa-brands fa-github" alt="GitHub"></i>
+        </a>
+    </div>
+</footer>
+<script src="large.js"></script>
+
+
+</body>
+</html>
